@@ -267,14 +267,14 @@ namespace LINQ
             Console.WriteLine(sumAge);
 
             Console.WriteLine("Täisealiste isikute koondvanus");
-
+            //sedasi saan täiskasvanute arvu ja nende koondvanuse
             var sumAdult = 0;
 
             var numAdults = PeopleList.people.Sum(x =>
             {
                 if (x.Age >= 18)
                 {
-                    //tahan teada t'iskasvanud t;;tajate koondvanust
+                    
                     sumAdult = sumAdult + x.Age;
                     return 1;
                 }
